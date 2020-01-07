@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Element } from "react-scroll";
 import WorkTag from "./widgets/WorkTag";
-import { NavLink } from "react-router-dom";
+//import { NavLink } from "react-router-dom";
 import MQ from "../img/MQ.png";
 import Coursera from "../img/Coursera_logo.png";
 import cateight from "../img/catEight.png";
