@@ -20,6 +20,7 @@ class Header extends Component{
                <li><NavLink exact to="/about">About</NavLink></li>
                <li><NavLink exact to="/resume">Resume</NavLink></li>
                <li><NavLink to="/portfolio">Portfolio</NavLink></li>
+               <li><NavLink to="/gallery">Gallery</NavLink></li>
             </ul>
 
          </nav>
@@ -27,13 +28,13 @@ class Header extends Component{
          <div className="row banner">
             <div className="banner-text">
 
-               <h1 className="responsive-headline">Xiaotian Liu</h1>
+               <h1 className="responsive-headline"><p>Hi!</p> I'm Xiaotian Liu</h1>
                <h3 className="banner-text-title">
                <span>I'm currently a Student who  </span>
                <span className='position-title'><TypingTexts items={['major in Data Science.','loves photography.','amateur in PhotoShop.']} /> </span>
                </h3>
                  <h3> 
-                     Always have passion to explore new technology
+                     Always have passion to explore new technology.
                  </h3>
                <hr />
                <ul className="social">

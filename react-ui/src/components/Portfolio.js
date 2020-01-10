@@ -1,49 +1,55 @@
-import React, {Component} from 'react';
-import {Element} from 'react-scroll';
-import {NavLink} from 'react-router-dom';
+import React, { Component } from "react";
+import { Element } from "react-scroll";
+//import { NavLink } from "react-router-dom";
 
-
-
-
-class About extends Component {
-
+class Portfolio extends Component {
   componentDidMount() {
-  var Scroll = require('react-scroll');
-  var scroller = Scroll.scroller;
+    var Scroll = require("react-scroll");
+    var scroller = Scroll.scroller;
 
-    scroller.scrollTo('scroll-portfolio', {
-    duration: 1500,
-    delay: 100,
-    smooth: true,
-    offset: 50, // Scrolls to element + 50 pixels down the page
-  })
+    scroller.scrollTo("scroll-resume", {
+      duration: 1500,
+      delay: 100,
+      smooth: true,
+      offset: 0 // Scrolls to element + 50 pixels down the page
+    });
   }
 
-
-  render(){
-
-    return(
-       <Element name="scroll-portfolio">
-      <section id="portfolio">
-
-      <div className="portfolio--tab">
-        <ul>
-        <li><NavLink  to="/portfolio/web">Web</NavLink></li>
-        <li><NavLink  to="/portfolio/graphics">Graphics</NavLink></li>
-        <li><NavLink  to="/portfolio/videos">Videos</NavLink></li>
-        </ul>
-      </div>
-
-         <div className="row">
-            <div className="ten columns">
-
+  render() {
+    return (
+      <Element name="scroll-resume">
+        <section id="resume">
+          <div className="row education">
+            <div className="three columns header-col">
+              <h1>
+                <span>Work</span>
+              </h1>
             </div>
-         </div>
 
-      </section>
-    </Element>
+            <div className="nine columns main-col">
+              <div className="row item">
+                <div className="twelve columns">
+                  <h3>
+                    **
+                    {/* <img src={MQ} alt="logo-mq" /> */}
+                  </h3>
+                  <p className="info">
+                    **{" "}
+                  </p>
+                  <p className="date">#Year</p>
+
+                  <p className="resume__subject-title">Relevant Acomplishment:</p>
+                  <ul className="resume__subject-list">
+                    <li>*</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </Element>
     );
   }
 }
 
-export default About;
+export default Portfolio;

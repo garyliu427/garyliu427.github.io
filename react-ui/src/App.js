@@ -3,6 +3,7 @@ import Header from './components/Header';
 import About from './components/About';
 import Resume from './components/Resume';
 import Portfolio from './components/Portfolio';
+import Gallery from './components/Gallery';
 // import React, { useCallback, useEffect, useState } from 'react';
 import React from 'react';
 import './App.scss';
@@ -73,6 +74,7 @@ function App() {
           <Route path='/about' component={About} />
           <Route path='/resume' component={Resume} />
           <Route path='/portfolio' component={Portfolio} />
+          <Route path='/gallery' component={Gallery} />
           </div>
     </BrowserRouter>
   );
