@@ -3,14 +3,16 @@ import { Element } from "react-scroll";
 //import { NavLink } from "react-router-dom";
 import ImageGallery from "./widgets/ImageGallery";
 
-const photos = [
+  const photos = [
     { src: 'https://source.unsplash.com/SKyTtDfqoSo', width: 3, height: 2 },
     { src: 'https://source.unsplash.com/CLVxw4WmAdM', width: 3, height: 3 },
     { src: 'https://source.unsplash.com/uAY50KJs4ms', width: 3, height: 4 },
     { src: 'https://source.unsplash.com/dU134-jvKqw', width: 3, height: 4 },
     { src: 'https://source.unsplash.com/INr-6imR5EY', width: 3, height: 4 },
+    { src: 'https://source.unsplash.com/vQV9qjzwATE', width: 2, height: 3 },
     { src: 'https://source.unsplash.com/C2ynnglJfhA', width: 3, height: 4 },
-  ];
+    { src: 'https://source.unsplash.com/zraOUvD0BH0', width: 3, height: 4 },
+   ]
 
 class Gallery extends Component {
   componentDidMount() {
@@ -27,7 +29,7 @@ class Gallery extends Component {
 
   render() {
     return (
-      <Element name="scroll-graphic">
+      <Element name="scroll-resume">
         <div className="portfolio-graphic">
           <ImageGallery photos={photos} />
         </div>
